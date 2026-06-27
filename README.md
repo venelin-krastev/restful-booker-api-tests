@@ -20,8 +20,9 @@ Automated API test suite for [restful-booker.herokuapp.com](https://restful-book
 | `AuthenticationTests.cs` | POST /auth | 5 |
 | `UpdateBookingTests.cs` | PUT + PATCH /booking/{id} | 4 |
 | `DeleteBookingTests.cs` | DELETE /booking/{id} | 4 |
+| `FilterAndSchemaTests.cs` | GET /booking?firstname, GET /booking/{id} schema | 7 |
 
-**Total: 23 tests**
+**Total: 30 tests**
 
 ## What Is Tested
 
@@ -30,6 +31,8 @@ Automated API test suite for [restful-booker.herokuapp.com](https://restful-book
 - CRUD operations — Create, Read, Update, Delete
 - Error handling — missing fields, invalid credentials, missing token
 - PUT vs PATCH behavior — full replace vs partial update
+- Parameterized filter tests with `[TestCase]` — firstname and lastname query params
+- Schema validation — all required response fields are present
 
 ## Authentication
 
