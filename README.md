@@ -77,6 +77,19 @@ These quirks make the API a useful exercise in asserting on actual behaviour rat
 - Tests always create a fresh booking before update/delete operations to guarantee a valid, known ID
 - Some pre-existing booking IDs return `418` — avoided by using test-created IDs only
 
+## Manual Testing — Postman Collection
+
+A Postman collection mirrors the automated tests for quick manual verification:
+
+| Request | Method | Endpoint |
+|---|---|---|
+| GET All Bookings | GET | `/booking` |
+| GET Single Booking | GET | `/booking/{id}` |
+| GET Booking Not Found | GET | `/booking/999999` |
+| POST Create Booking | POST | `/booking` |
+
+Import the collection into Postman and set the base URL to `https://restful-booker.herokuapp.com`.
+
 ## Run Tests
 
 ```bash
