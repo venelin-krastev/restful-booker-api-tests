@@ -77,6 +77,17 @@ These quirks make the API a useful exercise in asserting on actual behaviour rat
 - Tests always create a fresh booking before update/delete operations to guarantee a valid, known ID
 - Some pre-existing booking IDs return `418` — avoided by using test-created IDs only
 
+## SQL Verification Queries
+
+The `sql-queries/` folder contains queries that mirror the automated tests — used to verify data integrity directly in the database after API operations:
+
+- Count all bookings / group by status
+- Find bookings by guest name
+- NULL checks for missing fields
+- Data integrity checks (checkout before checkin)
+- Duplicate booking detection
+- Aggregate stats with `COUNT`, `AVG`, `MAX`, `MIN`
+
 ## Manual Testing — Postman Collection
 
 A Postman collection mirrors the automated tests for quick manual verification:
