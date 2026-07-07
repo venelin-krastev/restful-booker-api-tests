@@ -77,6 +77,16 @@ These quirks make the API a useful exercise in asserting on actual behaviour rat
 - Tests always create a fresh booking before update/delete operations to guarantee a valid, known ID
 - Some pre-existing booking IDs return `418` — avoided by using test-created IDs only
 
+## QA Documentation
+
+| File | Description |
+|---|---|
+| `test-plan.md` | Scope, test types, entry/exit criteria, risks |
+| `test-design-notes.md` | Equivalence partitioning, BVA, test types reference |
+| `istqb-cheatsheet.md` | Test levels, pyramid, verification vs validation |
+| `bug-reports/BUG-001.md` | POST /booking non-standard 200 OK status |
+| `bug-reports/BUG-002.md` | DELETE /booking non-standard 201 Created status |
+
 ## SQL Verification Queries
 
 The `sql-queries/` folder contains queries that mirror the automated tests — used to verify data integrity directly in the database after API operations:
