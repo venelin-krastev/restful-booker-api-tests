@@ -86,6 +86,10 @@ These quirks make the API a useful exercise in asserting on actual behaviour rat
 | `istqb-cheatsheet.md` | Test levels, pyramid, verification vs validation |
 | `bug-reports/BUG-001.md` | POST /booking non-standard 200 OK status |
 | `bug-reports/BUG-002.md` | DELETE /booking non-standard 201 Created status |
+| `bug-reports/BUG-003.md` | POST /auth wrong credentials returns 200 instead of 401 |
+| `bug-reports/BUG-004.md` | DELETE non-existent booking returns 405 instead of 404 |
+| `bdd-specflow-notes.md` | BDD/SpecFlow quick reference with Gherkin examples |
+| `INTERVIEW_PREP.md` | Interview Q&A based on FilterAndSchemaTests.cs |
 
 ## SQL Verification Queries
 
